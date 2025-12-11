@@ -10,13 +10,13 @@ const Home = () => {
     setNumbers([...numbers, parseInt(newNumber)]);
     setNewNumber("");
   };
-  
+
 
   const [add, setadd] = useState(100);
-  const [minus ,setminus] = useState(200);
-  const [mult ,setmult] = useState(100*20)
-
-
+  const [minus, setminus] = useState(200);
+  const [mult, setmult] = useState(100 * 20);
+  let [state, setstate] = useState("abi")
+  const [color, setColor] = useState("bg-pink-500");
 
 
 
@@ -39,10 +39,16 @@ const Home = () => {
       <div className="p-8">
         <button onClick={() => setadd(add + 10)}>Increment</button>
         <h2>Increment :{add}</h2>
-        <button onClick={() => setminus(minus-50)}>Decrement</button>
+        <button onClick={() => setminus(minus - 50)}>Decrement</button>
         <h2>Decrement : {minus}</h2>
-        <button onClick={() => setmult(mult *10)}>Multplicaion</button>
+        <button onClick={() => setmult(mult * 10)}>Multplicaion</button>
         <h2>mult : {mult}</h2>
+        <button onClick={() => setstate("saravanan")}>state</button>
+        <h2> state :{state}</h2>
+        <div  className={` p-5 w-fit  mt-5  text-white ${color}`}>
+        <button onClick={() => setColor("bg-blue-500")}>Changecolor</button>
+        <h2>color :{color}</h2>
+        </div>
 
 
 
@@ -55,20 +61,3 @@ const Home = () => {
 
 export default Home;
 
-// const [add, setadd] = useState(100);
-//     const [state, setstate] = useState("saravanan");
-//     const [color, setcolor] = useState("bg-red-600");
-//     const [image, setImage] = useState(img1);
-
-
-//     return (
-//         <div>
-
-
-
-
-
-//             <button onClick={() => setadd(add + 1)}>Increment</button>
-//             <h1>{add}</h1>
-//             <button onClick={() => setstate("abi")}>change</button>
-//             <p>{state}</p
