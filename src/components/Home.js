@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import img1 from "../assests/1.png"
+import img2 from "../assests/image.png"
 
 const Home = () => {
 
@@ -17,6 +19,7 @@ const Home = () => {
   const [mult, setmult] = useState(100 * 20);
   let [state, setstate] = useState("abi")
   const [color, setColor] = useState("bg-pink-500");
+  const [img , setImg] = useState(img1) ;
 
 
 
@@ -49,6 +52,8 @@ const Home = () => {
         <button onClick={() => setColor("bg-blue-500")}>Changecolor</button>
         <h2>color :{color}</h2>
         </div>
+        <button onClick={() => setImg(img2)}>Image</button>
+        <img src={img} alt="img"  />
 
 
 
