@@ -8,6 +8,7 @@ const About = () => {
       <p className='text-xl bg-pink-600 text-white w-fit p-2 m-5'>About</p>
       <p className='text-xl bg-pink-600 text-white w-fit p-2 m-5'>Contact</p>
       <p className='text-xl bg-pink-600 text-white w-fit p-2 m-5'>Delivery</p>
+      <p>hfjqdlqwkequrjdmkLJWQURIUHQJFLKKJ  </p>
      
     </div>
   )
